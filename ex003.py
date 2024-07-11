@@ -7,6 +7,3 @@ elif segundo_valor > primeiro_valor:
     print(f'{segundo_valor=} é maior do que o {primeiro_valor=}')
 else:
     print('Os números são iguais ou não foram digitados.')
-
-if 0 and 1:
-    print(True and 1)
