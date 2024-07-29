@@ -24,7 +24,9 @@ contrário disso:
 O primeiro dígito do CPF é 7
 '''
 
-cpf = '74682489070'
+cpf = '746.824.890-70'\
+   .replace('.', '')\
+   .replace('-', '')
 nove_digitos = cpf[0:9] #fatiamento
 contador_regressivo1 = 10
 
@@ -73,4 +75,7 @@ for digito in dez_digitos:
 segundo_digito = (resultado2 * 10) % 11
 segundo_digito = segundo_digito if segundo_digito <= 9 else 0
 print(segundo_digito)
+
+novocpf = f'{nove_digitos}{primeiro_digito}{segundo_digito}'
+print(novocpf)
 
